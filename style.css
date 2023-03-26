@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@400;500&display=swap");
 .color1 {
   color: hsl(228, 12%, 48%);
 }
@@ -9,19 +8,20 @@
 .green {
   background-color: hsl(158, 36%, 37%);
 }
-.color5{
+.color5 {
   color: hsl(158, 36%, 37%);
 }
 .color4 {
   color: white;
 }
-.ff-fraunce{
-  font-family: 'Fraunces', serif;
+.ff-fraunce {
+  font-family: "Fraunces", serif;
 }
-.ff-mont{
-  font-family: 'Montserrat', sans-serif;
+.ff-mont {
+  font-family: "Montserrat", sans-serif;
 }
 
+/*-----Responsive Design for width 375px----------*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,7 +39,7 @@ body {
 }
 .container {
   min-height: 70%;
- max-width: 45%;
+  width: 45%;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -62,28 +62,38 @@ body {
   padding-block: 1rem;
   background-color: white;
 }
-.card h1{
+.card h1 {
   font-size: 35px;
 }
-.preview{
-  letter-spacing: .4rem;
+.preview {
+  letter-spacing: 0.4rem;
   font-size: 12px;
 }
 .main-para {
   font-size: 12px;
   line-height: 1.2rem;
 }
-.price{
+.price {
   font-size: 30px;
 }
-.previous-price{
-font-size: 11px;
-text-decoration:line-through;
-margin-left: 2rem;
+.previous-price {
+  font-size: 11px;
+  text-decoration: line-through;
+  margin-left: 2rem;
 }
-button{
+button {
   height: 2.7rem;
   border-radius: 5px;
   border: none;
   font-weight: 700;
+}
+@media (max-width: 375px) {
+  .container {
+    min-width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .card {
+    height: 30rem;
+  }
 }
